@@ -15,13 +15,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Note about lifecycle
-        /*
-         onCreate : Only called once
-         when you rotate your screen onDestroy is called
-         application goes from  onStop -> onRestart -> onStart
-
-         */
 
         //go to activity two
         binding.button.setOnClickListener {
